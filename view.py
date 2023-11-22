@@ -5,7 +5,6 @@ def get_user_type():
     print('2: Supervisor Login')
     print('3: Visitor Login')
 
-
 def print_wrong_input():
     print('Wrong input entered')
 
@@ -61,6 +60,9 @@ def print_guard(result):
         print('Guard First Name: ' + row['firstname'])
         print('Guard Last Name: ' + row['lastname'])
         print()
+
+def print_medStaff(result):
+    pass
 
 
 def print_prisoner(result):
