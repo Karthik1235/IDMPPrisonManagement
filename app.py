@@ -6,6 +6,9 @@ import warnings
 from connection import db_connection
 import view
 import pandas as pd
+import PyQt5
+import matplotlib
+matplotlib.use('Qt5Agg')
 import matplotlib.pyplot as plt
 from prettytable import PrettyTable
 import yaml
