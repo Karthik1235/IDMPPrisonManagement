@@ -1,0 +1,201 @@
+addrId,street,city,state
+1,"9608 Annamark Avenue","Palo Alto",CA
+2,"70736 Sommers Way",Bradenton,FL
+3,"6709 Hayes Park",Glendale,AZ
+4,"768 Hermina Alley",Columbus,OH
+5,"9128 Lake View Lane",Milwaukee,WI
+6,"1528 Manufacturers Terrace",Pensacola,FL
+7,"394 Saint Paul Point",Mesa,AZ
+8,"3 Karstens Crossing",Savannah,GA
+9,"684 Weeping Birch Plaza",Buffalo,NY
+10,"0729 Lotheville Street",Charlotte,NC
+11,"62385 Pierstorff Drive",Clearwater,FL
+12,"4 Lakeland Park",Akron,OH
+13,"77401 Meadow Ridge Avenue",Baltimore,MD
+14,"80249 Ryan Parkway",Portsmouth,VA
+15,"83174 Johnson Crossing",Springfield,MO
+16,"2 Bellgrove Place","Great Neck",NY
+17,"3963 Logan Point",Flint,MI
+18,"4005 Ryan Alley",Topeka,KS
+19,"59 Blue Bill Park Pass",Columbia,SC
+20,"80699 Hallows Point",Phoenix,AZ
+21,"5113 Boyd Hill",Fairfax,VA
+22,"8680 Golf Course Park",Fayetteville,NC
+23,"61 Corben Terrace",Washington,DC
+24,"5839 Tennessee Alley",Amarillo,TX
+25,"38295 John Wall Hill",Irving,TX
+26,"22998 Knutson Pass",Hartford,CT
+27,"48 Maywood Plaza",Atlanta,GA
+28,"477 Petterle Park",Athens,GA
+29,"8 Tony Pass",Phoenix,AZ
+30,"39244 Carberry Point",Savannah,GA
+31,"781 Union Junction",Birmingham,AL
+32,"04 Pawling Drive","San Antonio",TX
+33,"5268 Rusk Plaza",Yakima,WA
+34,"20580 Bonner Avenue",Pueblo,CO
+35,"511 Mifflin Alley",Indianapolis,IN
+36,"574 Kennedy Pass",Bronx,NY
+37,"82 Hooker Park",Houston,TX
+38,"01 Moland Terrace",Troy,MI
+39,"09755 4th Trail",Lincoln,NE
+40,"66992 Meadow Vale Court",Houston,TX
+41,"199 Trailsway Plaza",Toledo,OH
+42,"1704 Kennedy Circle",Roanoke,VA
+43,"1 Clarendon Alley",Spring,TX
+44,"178 Miller Point",Brooklyn,NY
+45,"44217 Sauthoff Drive","El Paso",TX
+46,"8 Anzinger Trail","Grand Rapids",MI
+47,"6750 Summit Way","Redwood City",CA
+48,"26913 Eagan Point","El Paso",TX
+49,"9919 5th Street",Levittown,PA
+50,"66611 Northwestern Court",Cumming,GA
+51,"7053 Oxford Road","Santa Fe",NM
+52,"1 Manufacturers Crossing",Phoenix,AZ
+53,"6 Melby Court","San Diego",CA
+54,"5236 Katie Park","Oklahoma City",OK
+55,"73 Marquette Lane","Sioux Falls",SD
+56,"3340 Surrey Drive",Mobile,AL
+57,"69 Susan Plaza",Jacksonville,FL
+58,"63 Texas Pass",Columbus,GA
+59,"915 Fremont Road",Portland,ME
+60,"7274 Debs Crossing",Brooklyn,NY
+61,"31569 Atwood Pass",Washington,DC
+62,"8560 Autumn Leaf Way","North Little Rock",AR
+63,"19427 Jay Avenue",Montgomery,AL
+64,"38817 Northridge Parkway",Houston,TX
+65,"09143 Fieldstone Hill",Ridgely,MD
+66,"17888 Harbort Drive",Phoenix,AZ
+67,"8 Kensington Lane","Saint Paul",MN
+68,"39504 Briar Crest Way",Yonkers,NY
+69,"8 Farragut Drive","Saint Louis",MO
+70,"5 Kennedy Pass",Washington,DC
+71,"115 Hagan Avenue",Denver,CO
+72,"046 Columbus Way","Saint Paul",MN
+73,"4551 Lakewood Gardens Parkway",Montgomery,AL
+74,"51788 Mayer Court",Vancouver,WA
+75,"9568 Portage Point","Wilkes Barre",PA
+76,"76151 Sage Place","Garden Grove",CA
+77,"414 Rieder Road",Reading,PA
+78,"71107 Merry Junction","Santa Rosa",CA
+79,"44212 Lawn Street","Winter Haven",FL
+80,"9 Eastwood Junction",Waterbury,CT
+81,"019 Roth Way",Washington,DC
+82,"97 Becker Way",Philadelphia,PA
+83,"5564 Kim Road",Omaha,NE
+84,"881 Bunting Alley","El Paso",TX
+85,"2 Magdeline Junction","Moreno Valley",CA
+86,"6 Butterfield Center",Anchorage,AK
+87,"12467 Calypso Junction",Riverside,CA
+88,"96289 Maryland Park",Houston,TX
+89,"3202 Lukken Drive","Los Angeles",CA
+90,"2 Elmside Junction",Reno,NV
+91,"045 Glendale Avenue","Oklahoma City",OK
+92,"057 Sutherland Terrace",Miami,FL
+93,"501 Oak Way","Saint Petersburg",FL
+94,"01373 3rd Park",Erie,PA
+95,"56428 Corben Street","Fort Lauderdale",FL
+96,"95143 Dahle Park",Wichita,KS
+97,"576 Kenwood Terrace","Fort Worth",TX
+98,"03249 Alpine Avenue",Gilbert,AZ
+99,"96943 Waxwing Street","Cedar Rapids",IA
+100,"735 Linden Avenue","San Angelo",TX
+101,"92 Eastlawn Terrace",Buffalo,NY
+102,"64776 Del Sol Crossing",Lexington,KY
+103,"58672 Sage Parkway",Miami,FL
+104,"4088 Algoma Parkway",Racine,WI
+105,"6715 Corry Avenue",Columbia,SC
+106,"97 Stoughton Junction","Winter Haven",FL
+107,"85 Del Sol Center","Idaho Falls",ID
+108,"072 Nobel Avenue",Irvine,CA
+109,"3 Longview Circle",Washington,DC
+110,"9836 Center Point",Amarillo,TX
+111,"4 Welch Alley",Bethlehem,PA
+112,"9316 Buena Vista Lane",Denton,TX
+113,"5342 Thompson Lane",Tacoma,WA
+114,"6 Armistice Drive",Richmond,VA
+115,"42 Rigney Trail","Van Nuys",CA
+116,"8984 Mcguire Lane",Decatur,GA
+117,"9 Susan Avenue",Miami,FL
+118,"7355 Lakeland Court","Los Angeles",CA
+119,"592 Atwood Hill","Salt Lake City",UT
+120,"434 Westerfield Drive",Rochester,NY
+121,"835 Coolidge Circle",Toledo,OH
+122,"849 Mallory Alley",Chicago,IL
+123,"69 Karstens Park",Springfield,IL
+124,"543 Florence Parkway",Lubbock,TX
+125,"758 Lake View Lane",Springfield,MA
+126,"405 1st Trail","New York City",NY
+127,"4 Butterfield Drive","El Paso",TX
+128,"2 Grasskamp Parkway","Cedar Rapids",IA
+129,"4294 Porter Junction",Lincoln,NE
+130,"90 Springview Way","Des Moines",IA
+131,"762 Hoffman Place",Clearwater,FL
+132,"57 American Ash Terrace","New York City",NY
+133,"9 Elmside Crossing",Toledo,OH
+134,"6 Towne Road",Jacksonville,FL
+135,"0940 Mcguire Plaza",Brooklyn,NY
+136,"6497 Holy Cross Center",Pittsburgh,PA
+137,"421 North Crossing",Tampa,FL
+138,"0 Stoughton Crossing",Brea,CA
+139,"3727 Corscot Circle",Albuquerque,NM
+140,"4 Thierer Alley","Baton Rouge",LA
+141,"89145 Center Drive",Memphis,TN
+142,"700 Sauthoff Crossing",Washington,DC
+143,"6 Arapahoe Junction",Frederick,MD
+144,"8 Shasta Junction",Cleveland,OH
+145,"7 Bashford Place",Trenton,NJ
+146,"8536 Dwight Court",Detroit,MI
+147,"29991 Fordem Trail",Detroit,MI
+148,"295 Gale Drive","San Francisco",CA
+149,"14 Sullivan Road","Fort Myers",FL
+150,"9215 Ridgeway Circle","Kansas City",MO
+151,"747 Westend Center",Springfield,MA
+152,"163 Nelson Junction",Lubbock,TX
+153,"0 Gateway Way",Pittsburgh,PA
+154,"34 Moland Drive","Sioux City",IA
+155,"88 Independence Street","Wilkes Barre",PA
+156,"93800 Straubel Park",Riverside,CA
+157,"35230 Garrison Crossing",Columbus,OH
+158,"640 Algoma Center",Ogden,UT
+159,"8504 Packers Terrace","Jefferson City",MO
+160,"40695 Badeau Junction","Shawnee Mission",KS
+161,"8 Basil Road",Birmingham,AL
+162,"224 Westerfield Lane",Woburn,MA
+163,"78113 Fairfield Alley",Anchorage,AK
+164,"9 Duke Crossing",Camden,NJ
+165,"987 Moland Terrace","Winston Salem",NC
+166,"67115 Donald Terrace",Jacksonville,FL
+167,"1067 Ludington Road",Memphis,TN
+168,"84 Oxford Center",Hartford,CT
+169,"443 Havey Alley",Charlotte,NC
+170,"4788 Warner Hill","San Antonio",TX
+171,"366 Buhler Crossing",Knoxville,TN
+172,"3998 Forest Run Alley",Charlotte,NC
+173,"394 Morningstar Trail","Santa Ana",CA
+174,"947 Bay Plaza",Dallas,TX
+175,"9 Ruskin Place",Conroe,TX
+176,"705 Delaware Court",Portsmouth,NH
+177,"9173 Everett Drive",Naples,FL
+178,"2896 Fordem Terrace",Hyattsville,MD
+179,"98 Ryan Way",Minneapolis,MN
+180,"807 Kenwood Circle",Akron,OH
+181,"58241 Esch Point",Miami,FL
+182,"39 Hauk Place",Toledo,OH
+183,"5941 Eastwood Place",Sarasota,FL
+184,"91936 Oneill Way",Cincinnati,OH
+185,"26274 North Court","Salt Lake City",UT
+186,"4 Mayer Court",Albuquerque,NM
+187,"0 7th Alley",Orlando,FL
+188,"5109 Aberg Terrace","Delray Beach",FL
+189,"164 Novick Drive","Saint Cloud",MN
+190,"76 Quincy Court",Monticello,MN
+191,"9 Barby Street",Aiken,SC
+192,"38 Steensland Trail",Tampa,FL
+193,"4720 Evergreen Plaza","Sioux Falls",SD
+194,"28 Fisk Street",Arlington,VA
+195,"05 Carey Street",Bethesda,MD
+196,"94436 Pennsylvania Trail",Meridian,MS
+197,"3 Barnett Lane",Chicago,IL
+198,"516 Schurz Way",Humble,TX
+199,"0006 Waubesa Parkway","El Paso",TX
+200,"52907 Huxley Hill",Salem,OR
