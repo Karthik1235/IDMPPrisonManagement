@@ -1,6 +1,11 @@
 laborId,laborName
-1,gardening
-2,cleaning
-3,construction
-4,carpentry
-5,plumbing
+1,"janitorial work"
+2,"grounds maintenance"
+3,"laundry services"
+4,"food preparation"
+5,"assembly line work"
+6,carpentry
+7,plumbing
+8,"electrical work"
+9,"data entry"
+10,gardening
