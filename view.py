@@ -19,6 +19,7 @@ def print_visitor_operations():
     print('2. See Request Status')
     print('Q. Quit')
 
+
 def print_supervisor_operations():
     print('\nEnter the operation you want to perform:')
     print('1. Examine all your guards and their details')

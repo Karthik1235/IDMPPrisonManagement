@@ -1,6 +1,7 @@
 import pymysql
 
 
+
 class db_connection:
     def __init__(self, username, password):
         self.cnx = ''
