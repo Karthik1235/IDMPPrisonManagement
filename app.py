@@ -463,7 +463,6 @@ def accept_reject_pending_requests(supervisor_name):
     except Exception as e:
         print(repr(e))
         print('Could not update the approval')
-
     return
 
 
