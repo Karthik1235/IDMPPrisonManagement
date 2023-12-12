@@ -18,7 +18,7 @@ from yaml.loader import SafeLoader
 current_user = ''
 cnx = ''
 
-
+# Logs in to the database using credentials from a YAML file
 def db_login():
     with open('Userdetails.yaml', 'r') as f:
         data = list(yaml.load_all(f, Loader=SafeLoader))
@@ -28,13 +28,13 @@ def db_login():
     view.welcome()
     return cnx
 
-
+# Asks for the type of user (admin, supervisor, visitor) trying to log in
 def get_login_user():
     view.get_user_type()
     usertype = input()
     return usertype
 
-
+# Handles the login process for users based on their type (admin, supervisor, visitor)
 def userlogin(usertype):
     global current_user
     current_user = input('Please enter your username:')
@@ -62,7 +62,7 @@ def userlogin(usertype):
             return True
     return True
 
-
+# Initiates the login process based on the user type entered
 def user_login(usert):
     if usert == "3":
         new_visitor = input('Welcome to Prison Visiting Permission, '
@@ -109,7 +109,7 @@ def user_login(usert):
         return False
     return True
 
-
+# Manages the process of scheduling visits for prisoners by visitors
 def prisoner_visitation():
     try:
         prisonerDetails = "call getAllPrisoners()"
@@ -148,7 +148,7 @@ def prisoner_visitation():
     except Exception as e:
         print(repr(e))
 
-
+# Allows visitors to perform various operations like visitation and checking request details
 def visitor_operations(username):
     view.print_visitor_operations()
     operation = input().upper()
@@ -165,7 +165,7 @@ def visitor_operations(username):
     if operation != "Q":
         visitor_operations(username)
 
-
+# Displays pending visitation requests for a visitor
 def see_request_details(username):
     print("Approval Status")
     fetch_approvals = "call getRequestForVisitor('" + username + "');"
@@ -179,14 +179,13 @@ def see_request_details(username):
         count+=1
     print(t)
 
-
-
+# Shows details of all supervisors
 def show_supervisors():
     cur.callproc('getAllSupervisors')
     result = cur.fetchall()
     view.print_supervisor(result)
 
-
+# Deletes a supervisor based on user input
 def delete_supervisor():
     show_supervisors()
     supervisor_id = input('Which supervisor do you want to remove? Enter the supervisor no')
@@ -203,7 +202,7 @@ def delete_supervisor():
         print(repr(e))
     return
 
-
+# Allows updating supervisor details
 def update_supervisor():
     show_supervisors()
     supervisor_id = input('Which supervisor do you want to remove? Enter the guard no')
@@ -233,14 +232,14 @@ def update_supervisor():
     except Exception as e:
         print(repr(e))
 
-
+# Displays details of guards assigned to a supervisor
 def show_guards(supervisor_name):
     stmt_get_guards = "call getAllGuards('" + supervisor_name + "')"
     cur.execute(stmt_get_guards)
     result = cur.fetchall()
     view.print_guard(result)
 
-
+# Adds a guard assigned to a supervisor
 def add_guard(supervisor_name):
     SSN = input('Please enter the SSN of the guard: ')
     fname = input('Please enter the first name: ')
@@ -267,7 +266,7 @@ def add_guard(supervisor_name):
     except Exception as e:
         print(repr(e))
 
-
+# Removes a guard assigned to a supervisor
 def remove_guard(supervisor_name):
     show_guards(supervisor_name)
     guard_id = input('Which guard do you want ot remove? Enter the guard no: ')
@@ -284,7 +283,7 @@ def remove_guard(supervisor_name):
         print(repr(e))
     return
 
-
+# Updates details of a guard under a specific supervisor
 def update_guard(supervisor_name):
     show_guards(supervisor_name)
     guard_id = input('Which guard do you want ot remove? Enter the guard no: ')
@@ -313,14 +312,14 @@ def update_guard(supervisor_name):
     except Exception as e:
         print('Could not update the data for the given guard')
 
-
+# Displays details of all prisoners
 def show_prisoners():
     stmt_get_prisoners = "call getAllPrisoners()"
     cur.execute(stmt_get_prisoners)
     result = cur.fetchall()
     view.print_prisoner(result)
 
-
+# Adds a new prisoner to the system
 def add_prisoner():
     SSN = input('Please enter the SSN of the prisoner: ')
     fname = input('Please enter the first name: ')
@@ -380,7 +379,7 @@ def add_prisoner():
     except Exception as e:
         print(repr(e))
 
-
+# Releases prisoners scheduled for release
 def release_prisoner():
     try:
         cur.callproc('releasePrisoner')
@@ -395,7 +394,7 @@ def release_prisoner():
     except Exception as e:
         print(repr(e))
 
-
+# Updates details of a specific prisoner
 def update_prisoner():
     show_prisoners()
     prisoner_id = input('Which prisoner do you want to update? Enter the prisoner no')
@@ -425,7 +424,7 @@ def update_prisoner():
         print(repr(e))
         print('Could not update the prisoner details')
 
-
+# Allows supervisors to accept or reject pending visitation requests
 def accept_reject_pending_requests(supervisor_name):
     print("List of Pending requests for approval and rejection")
     fetch_approvals = "call requestsForSupervisor('" + supervisor_name + "');"
@@ -466,13 +465,14 @@ def accept_reject_pending_requests(supervisor_name):
 
     return
 
-
+# Visualizes the age range of prisoners
 def visualize_age_range():
     stmt_get_age_prisoners = "call prisonerAgeRange()"
     cur.execute(stmt_get_age_prisoners)
     result = cur.fetchall()
     plot_data(result)
 
+# Visualizes prisoner occupancy in different blocks
 def visualize_prisoner_occupancy():
     stmt_get_age_prisoners = "call getRemainingBlockCapacity()"
     cur.execute(stmt_get_age_prisoners)
@@ -483,6 +483,7 @@ def visualize_prisoner_occupancy():
     df.plot.bar(x='blockNo', y='capacity', rot=0)
     plt.show()
 
+# Visualizes filled capacity of different blocks
 def visualize_prisoner_filled():
     stmt_get_age_prisoners = "call getOccupiedBlocks()"
     cur.execute(stmt_get_age_prisoners)
@@ -493,7 +494,7 @@ def visualize_prisoner_filled():
     df.plot.bar(x='blockId', y='capacity_filled', rot=0)
     plt.show()
 
-
+# Visualizes the acceptance rates of supervisors for visitation requests
 def visualize_supervisor_acceptance():
     warnings.filterwarnings('ignore')
     stmt_get_percent = "call getAllApprovalRates()"
@@ -505,6 +506,7 @@ def visualize_supervisor_acceptance():
     df.plot.bar(x='supervisorId', y='approval_rate', rot=0)
     plt.show()
 
+# Shows crime statistics for each block
 def visualize_crime_per_block():
     try:
         cur.callproc('getCrimeStatsforBlock')
@@ -517,7 +519,7 @@ def visualize_crime_per_block():
     except Exception as e:
         print(repr(e))
 
-
+# Handles operations for supervisors like managing guards, prisoners, and requests
 def supervisor_operations(supervisor_name):
     view.print_supervisor_operations()
     operation = input().upper()
@@ -556,20 +558,21 @@ def supervisor_operations(supervisor_name):
     if operation != "Q":
         supervisor_operations(supervisor_name)
 
-
+# Writes retrieved data to a CSV file
 def write_csv(data):
     df = pd.DataFrame.from_records(data)
     df.to_csv('abc.csv')
     return df.T
 
 
+# Plots line chart based on given status data
 def plot_data(status):
     df = write_csv(status)
     df=df.astype(float)
     df.plot(kind='line')
     plt.show()
 
-
+# Adds a new supervisor to the system
 def add_supervisor():
     username = input('Please enter the username of the supervisor: ')
     password = input('Please enter the password of the supervisor: ')
@@ -599,7 +602,7 @@ def add_supervisor():
     except Exception as e:
         print(repr(e))
 
-
+# Admin operations like managing supervisors, visualizing acceptance rates, etc.
 def admin_operations(username):
     view.print_admin_operations()
     operation = input().upper()
@@ -624,7 +627,7 @@ def admin_operations(username):
     if operation != "Q":
         admin_operations(username)
 
-
+# Controls the operations displayed based on user type after login
 def show_operations(username, usert):
     if usert == "3":
         visitor_operations(username)
@@ -635,7 +638,7 @@ def show_operations(username, usert):
     else:
         view.print_wrong_input()
 
-
+# Entry point of the program
 if __name__ == '__main__':
     try:
         cnx = db_login()
